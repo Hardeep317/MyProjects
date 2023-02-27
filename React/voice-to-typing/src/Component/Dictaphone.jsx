@@ -16,7 +16,7 @@ const Dictaphone = () => {
 
   return (
     <div className='container'>
-      <p>Microphone: {listening ? 'on' : 'off'}</p>
+      <p className=''>Microphone: {listening ? 'on' : 'off'}</p>
       <button onClick={SpeechRecognition.startListening}>Start</button>
       <button onClick={SpeechRecognition.stopListening}>Stop</button>
       <button onClick={resetTranscript}>Reset</button>
