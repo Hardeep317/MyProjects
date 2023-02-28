@@ -45,3 +45,25 @@
     transform: rotate(360deg);
   }
 }
+
+@media  screen and (max-width: 1025px){
+  .App h1{
+    top: 7%;
+  left: 27%;
+  }
+}
+
+@media  screen and (max-width: 769px){
+  .App h1{
+    top: 5%;
+  left: 22%;
+  }
+}
+
+@media  screen and (max-width: 426px){
+  .App h1{
+    font-size: 28px;
+    top: 5%;
+    left: 8%;
+  }
+}
