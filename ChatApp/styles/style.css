@@ -1,0 +1,93 @@
+body{
+    font-family: cursive,sans-serif;
+    box-sizing: border-box;
+    background-image: url('../media/WhatsApp-Chat-Wallpaper-iPhone-2.jpg');
+}
+
+.navbar{
+    height: 60px;
+    max-width: 485px;
+    margin: auto;
+    display: flex;
+    background-color: #3cff42;
+    color: white;
+    align-items: center;
+    /* border-radius: 12px; */
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-top-right-radius: 9px;
+    border-top-left-radius: 9px;
+}
+
+.logo{
+    width: 65px;
+    height: 100%;
+    border-radius: 12px;
+}
+
+.name{
+    margin-left: 2vh;
+}
+
+.container{
+    max-width: 438px;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    margin: auto;
+    height: 60vh;
+    overflow-y: auto;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    background-image: url('../media/WhatsApp-Chat-Wallpaper-iPhone-2.jpg');
+    padding: 23px;
+}
+
+.message{
+    margin: 12px 12px;
+    border: 2px solid black;
+    border-radius: 14px;
+    font-size: 15px;
+    padding: 8px;
+}
+
+.left{
+    float: left;
+    clear: both;
+    background-color: rgb(67, 67, 67);
+    color: white;
+}
+
+.right{
+    float: right;
+    clear: both;
+    background-color: #30d836;
+    color: white;
+}
+
+#form-action{
+    width: 460px;
+    margin: auto;
+    padding: 8px 10px;
+    border: 2px solid black;
+    margin-top: 8px;
+    border-radius: 9px;
+    font-size: 18px;
+    background-image: url('../media/WhatsApp-Chat-Wallpaper-iPhone-2.jpg');
+}
+
+#inputInp{
+    width: 80%;
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 9px;
+}
+
+.btn{
+    font-size: 18px;
+    padding: 8px;
+    background-color: rgb(29, 28, 28);
+    color: white;
+    border-radius: 30%;
+}

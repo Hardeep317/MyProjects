@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Noto+Serif:ital@0;1&family=Piazzolla:opsz,wght@8..30,200;8..30,300;8..30,400&family=Ubuntu:ital,wght@0,300;1,300;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Noto Serif', serif;
+    box-sizing: border-box;
+    background-color: rgb(14, 0, 25);
+}
+
+.navbar{
+    background-color: rgb(13, 5, 21);
+    color: white;
+    font-size: 22px;
+    width: 100vw;
+    padding: 15px;
+    border: 1px solid grey;
+}
+
+.container {
+    background-color: rgb(14, 0, 25);
+    /* height: 100vh;
+    width: 100vw; */
+    margin-top: 40px;
+}
+
+.gameContainer {
+    width: 70vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxcontainer {
+    display: grid;
+    margin: 20px;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vh);
+    position: relative;
+}
+
+.line{
+    position: absolute;
+    width: 00vw;
+    height: 3px;
+    transition: width 1s ease-in-out;
+    background-color: rgb(202, 56, 250);
+}
+.box{
+    border: 1px solid rgb(202, 56, 250);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box:hover{
+    background-color: rgb(11, 19, 35);
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+
+.br-0{
+    border-right: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
+
+.gameInfo{
+    margin: 20px;
+    padding: 30px;
+}
+
+.gameInfo img{
+    width: 0px;
+    transition: width 1s ease-in-out;
+    border-radius: 15px;
+}
+
+.textBtn{
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.textInfo{
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    font-size: 2vw;
+}
+
+.boxtext{
+    color: white;
+    font-size: 2vw;
+}
+
+#reset{
+    font-size: 2vw;
+    padding: 3px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    background-color: crimson;
+    border: 3px solid white;
+}
+
+@media screen and (max-width:950px){
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (max-width:820px){
+    .gameContainer{
+        width: 80vw;
+    }
+    .textInfo{
+        font-size: 6vw;
+    }
+
+    #reset{
+        font-size: 6vw;
+    }
+}
+
+@media screen and (max-width:416px){
+
+    .gameContainer{
+        width: 90vw;
+    }
+
+    .textInfo{
+        font-size: 6vw;
+    }
+
+    .line{
+        display: none;
+    }
+
+    #reset{
+        font-size: 6vw;
+    }
+
+    .boxcontainer{
+        
+    grid-template-columns: repeat(3,16vw);
+    grid-template-rows: repeat(3,8vh);
+    }
+}
