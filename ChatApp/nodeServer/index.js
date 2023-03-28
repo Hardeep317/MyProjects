@@ -1,7 +1,6 @@
 // This is the node server for our chat App
 const express = require('express');
 const http = require('http');
-// const socketio = require('socket.io');
 const path = require('path');
 
 
@@ -14,7 +13,6 @@ const io = require('socket.io')(server,{
         origin: "*",
       }
 });
-// app.use(express.static(path.join(__dirname,"/")))
 const users = {};
 
 io.on('connection',socket => {

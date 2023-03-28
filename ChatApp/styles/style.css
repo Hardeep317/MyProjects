@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     font-family: cursive,sans-serif;
     box-sizing: border-box;
@@ -12,7 +17,6 @@ body{
     background-color: #3cff42;
     color: white;
     align-items: center;
-    /* border-radius: 12px; */
     border-top: 2px solid black;
     border-left: 2px solid black;
     border-right: 2px solid black;
@@ -90,4 +94,70 @@ body{
     background-color: rgb(29, 28, 28);
     color: white;
     border-radius: 30%;
+}
+
+@media screen and (max-width: 426px){
+    .container{
+        width: 370px;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .navbar{
+        height: 60px;
+        max-width: 370px;
+        padding: 0 10px;
+        margin: auto;
+    }
+
+    #form-action{
+        width: 380px;
+        margin: auto;
+        padding: 4px 7px;
+        border: 2px solid black;
+        margin-top: 8px;
+        border-radius: 9px;
+        font-size: 16px;
+    }
+
+    #inputInp{
+        width: 70%;
+        font-size: 16px;
+        margin-right: 8px;
+        padding: 6px;
+        border-radius: 9px;
+    }
+}
+
+@media screen and (max-width: 376px){
+    .container{
+        width: 320px;
+        margin: auto;
+        padding: 8px;
+    }
+
+    .navbar{
+        height: 50px;
+        width: 320px;
+        padding: 0 8px;
+        margin: auto;
+    }
+
+    #form-action{
+        width: 320px;
+        margin: auto;
+        padding: 4px 7px;
+        border: 2px solid black;
+        margin-top: 8px;
+        border-radius: 9px;
+        font-size: 16px;
+    }
+
+    #inputInp{
+        width: 70%;
+        font-size: 16px;
+        margin-right: 8px;
+        padding: 6px;
+        border-radius: 9px;
+    }
 }

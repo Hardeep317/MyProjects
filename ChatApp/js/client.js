@@ -1,6 +1,6 @@
 // This is the client side file
 
-var socket = io('http://localhost:8000');
+var socket = io('https://chat-app-backend-09fa.onrender.com');
 const form = document.getElementById('form-action');
 const messageInp = document.getElementById('inputInp');
 const container = document.querySelector('.container');
